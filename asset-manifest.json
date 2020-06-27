@@ -1,7 +1,7 @@
 {
   "main.css": "/sweeper/static/css/main.bdfe531c.chunk.css",
-  "main.js": "/sweeper/static/js/main.e42dd774.chunk.js",
-  "main.js.map": "/sweeper/static/js/main.e42dd774.chunk.js.map",
+  "main.js": "/sweeper/static/js/main.55b73eae.chunk.js",
+  "main.js.map": "/sweeper/static/js/main.55b73eae.chunk.js.map",
   "static/css/1.84eefac7.chunk.css": "/sweeper/static/css/1.84eefac7.chunk.css",
   "static/js/1.add7eec5.chunk.js": "/sweeper/static/js/1.add7eec5.chunk.js",
   "static/js/1.add7eec5.chunk.js.map": "/sweeper/static/js/1.add7eec5.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/1.84eefac7.chunk.css.map": "/sweeper/static/css/1.84eefac7.chunk.css.map",
   "static/css/main.bdfe531c.chunk.css.map": "/sweeper/static/css/main.bdfe531c.chunk.css.map",
   "index.html": "/sweeper/index.html",
-  "precache-manifest.b83ff4dfda06c3900862d3ad10d04eba.js": "/sweeper/precache-manifest.b83ff4dfda06c3900862d3ad10d04eba.js",
+  "precache-manifest.2d97b22f0a2c2d41caaacce16f855d89.js": "/sweeper/precache-manifest.2d97b22f0a2c2d41caaacce16f855d89.js",
   "service-worker.js": "/sweeper/service-worker.js"
 }
