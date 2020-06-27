@@ -8,15 +8,16 @@ import './GameCell.css';
 export interface Props {
   isGameOver: boolean;
   cell: Cell;
-  onMouseUp: React.MouseEventHandler;
+  onOpen: () => void;
+  onFlag: () => void;
 }
 
-const GameCell: React.FC<Props> = ({ isGameOver, cell, onMouseUp }) => (
+const GameCell: React.FC<Props> = ({ isGameOver, cell, onOpen, onFlag }) => (
   <div className="GameCell">
     {
       cell.opened ?
         <GameCellOpened cell={cell} /> :
-        <GameCellUnopened cell={isGameOver ? cell : null} onMouseUp={onMouseUp}>
+        <GameCellUnopened cell={isGameOver ? cell : null} onOpen={onOpen} onFlag={onFlag}>
           {cell.flagged ? FLAG : null}
         </GameCellUnopened>
     }

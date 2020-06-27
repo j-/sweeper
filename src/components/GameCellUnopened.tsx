@@ -5,19 +5,26 @@ import './GameCellUnopened.css';
 
 export interface Props {
   cell?: Cell | null;
-  onMouseUp: React.MouseEventHandler;
+  onOpen: () => void;
+  onFlag: () => void;
 }
 
-const cancel: React.MouseEventHandler = (e) => e.preventDefault();
-
-const GameCellUnopened: React.FC<Props> = ({ cell, onMouseUp, children }) => (
+const GameCellUnopened: React.FC<Props> = ({ cell, onOpen, onFlag, children }) => (
   <button
     className="GameCellUnopened"
     type="button"
     tabIndex={-1}
-    onContextMenu={cancel}
-    onMouseDown={cancel}
-    onMouseUp={onMouseUp}
+    onContextMenu={(e) => {
+      e.preventDefault();
+      onFlag();
+    }}
+    onMouseDown={(e) => {
+      e.preventDefault();
+    }}
+    onMouseUp={(e) => {
+      e.preventDefault();
+      if (e.button !== 2) onOpen();
+    }}
   >
     {
       cell ? (

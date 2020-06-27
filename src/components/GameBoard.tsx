@@ -24,13 +24,8 @@ const GameBoard: React.FC = () => {
     const cell = cells[i];
     const x = i % width;
     const y = Math.floor(i / width);
-    const handleMouseUp: React.MouseEventHandler = (e) => {
-      e.preventDefault();
-      const placeFlag = e.getModifierState('Meta') || e.getModifierState('Control') || e.button === 2;
-      dispatch(placeFlag ? flagCell(x, y) : openCell(x, y));
-    };
     children.push(
-      <GameCell key={i} isGameOver={isGameOver} cell={cell} onMouseUp={handleMouseUp} />
+      <GameCell key={i} isGameOver={isGameOver} cell={cell} onOpen={() => dispatch(openCell(x, y))} onFlag={() => dispatch(flagCell(x, y))} />
     );
   }
   return (
