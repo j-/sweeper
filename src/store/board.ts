@@ -93,7 +93,7 @@ export const getNeighborCoords = (width: number, height: number, x: number, y: n
  * Returns a new board with each cell containing a neighbor mine count.
  */
 export const calculateNeighborMineCounts = (board: Board, width: number, height: number) => {
-  const onlyMined = ([x, y]) => board[x + y * height].mined;
+  const onlyMined = ([x, y]: [number, number]) => board[x + y * height].mined;
   for (let index = 0; index < board.length; index++) {
     const x = index % width;
     const y = Math.floor(index / width);

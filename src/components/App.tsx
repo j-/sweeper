@@ -1,10 +1,10 @@
 import * as React from 'react';
+import { useSelector } from 'react-redux';
 import GameBoard from './GameBoard';
 import GameStatus from './GameStatus';
 import RestartButton from './RestartButton';
 import SettingsButton from './SettingsButton';
 import NewGameMenu from './NewGameMenu';
-import { useSelector } from 'react-redux';
 import { getBoardWidth, getBoardHeight, isShowingSettings } from '../store';
 import './App.css';
 

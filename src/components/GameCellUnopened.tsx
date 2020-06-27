@@ -4,7 +4,7 @@ import { Cell } from '../store/cell';
 import './GameCellUnopened.css';
 
 export interface Props {
-  cell?: Cell;
+  cell?: Cell | null;
   onMouseUp: React.MouseEventHandler;
 }
 
