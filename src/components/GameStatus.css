@@ -1,5 +1,8 @@
 .GameStatus {
   background: #fff;
-  padding: 0.5em 1em;
-  margin: 1em;
+}
+
+.GameStatus p {
+  margin: 0;
+  padding: 1em;
 }

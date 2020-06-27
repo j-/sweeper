@@ -1,15 +1,17 @@
 import * as React from 'react';
 import { useDispatch } from 'react-redux';
 import { restartGame } from '../store/actions';
-import Button from './Button';
+import Button, { Props as ButtonProps } from './Button';
 
-const RestartButton: React.FC = ({ ...props }) => {
+export type Props = ButtonProps;
+
+const RestartButton: React.FC<Props> = ({ ...props }) => {
   const dispatch = useDispatch();
   const handleClick = React.useCallback<React.MouseEventHandler>((e) => {
     e.preventDefault();
     dispatch(restartGame());
   }, [dispatch]);
-  return <Button onClick={handleClick} className="btn btn-dark" {...props}>New game</Button>;
+  return <Button onClick={handleClick} {...props} />;
 }
 
 export default RestartButton;

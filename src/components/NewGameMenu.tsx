@@ -33,19 +33,19 @@ const NewGameMenu: React.FC = () => {
     dispatch(hideSettings());
   };
   return (
-    <div className="NewGameMenu">
-      <div>
+    <div className="NewGameMenu card card-body" style={{ maxWidth: '20em' }}>
+      <div className="form-group">
         <label htmlFor="NewGameMenu-size">Size</label><br />
         <input id="NewGameMenu-size" className="form-control" type="number" value={size} onChange={handleChangeSize} onBlur={handleBlurSize} />
       </div>
-      <div>
+      <div className="form-group">
         <label htmlFor="NewGameMenu-mines">Mines</label><br />
         <input id="NewGameMenu-mines" className="form-control" type="number" value={mines} onChange={handleChangeMines} onBlur={handleBlurMines} />
       </div>
       <div>
         <Button onClick={handleClickCancel}>
           Cancel
-        </Button>
+        </Button>{' '}
         <Button className="btn btn-primary" onClick={handleClickNewGame}>
           Start game
         </Button>
