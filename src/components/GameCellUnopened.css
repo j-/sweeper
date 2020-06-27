@@ -1,0 +1,21 @@
+.GameCellUnopened {
+  width: 100%;
+  height: 100%;
+  border: 2px outset #ccc;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.GameCellUnopened:hover {
+  background-color: #eee;
+}
+
+.GameCellUnopened:focus {
+  outline: none;
+  z-index: 2;
+}
+
+.GameCellUnopened:active {
+  border: 2px inset #ccc;
+  background-color: #eee;
+}

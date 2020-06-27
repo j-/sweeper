@@ -1,0 +1,35 @@
+.NeighborMineCount {
+  font-family: sans-serif;
+}
+
+.NeighborMineCount--1 {
+  color: #00f;
+}
+
+.NeighborMineCount--2 {
+  color: #007b00;
+}
+
+.NeighborMineCount--3 {
+  color: #f00;
+}
+
+.NeighborMineCount--4 {
+  color: #00007b;
+}
+
+.NeighborMineCount--5 {
+  color: #7b0000;
+}
+
+.NeighborMineCount--6 {
+  color: #006968;
+}
+
+.NeighborMineCount--7 {
+  color: #007b7b;
+}
+
+.NeighborMineCount--8 {
+  color: #7b7b7b;
+}
